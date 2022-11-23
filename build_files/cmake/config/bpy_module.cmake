@@ -86,3 +86,8 @@ endif()
 # Language Support.
 
 set(WITH_INTERNATIONAL       OFF CACHE BOOL "" FORCE)
+
+# CUDA Support
+if(NOT APPLE)
+  set(WITH_CYCLES_CUDA_BINARIES   ON  CACHE BOOL "" FORCE)
+endif()
